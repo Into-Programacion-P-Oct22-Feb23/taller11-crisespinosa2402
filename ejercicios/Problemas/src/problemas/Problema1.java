@@ -20,7 +20,13 @@ public class Problema1 {
     }
 
     public static void imprimirDatos(int[][] datos) {
-
+        for (int fila = 0; fila < datos.length; fila++) {
+            for (int column = 0; column < datos[fila].length; column++) {
+                int numero = datos[fila][column];
+                if (numero % 2 == 0) {
+                    System.out.printf("El numero %d es par\n", numero);
+                }
+            }
+        }
     }
-
 }
